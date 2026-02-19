@@ -11,5 +11,5 @@ double computeJacobian(const std::vector<double>& nodes) {
 int main() {
     std::vector<double> tri = {0,0, 1,0, 1,1;
     std::cout << "Jacobian: " << computeJacobian(tri) << std::endl;
-    return 0;
+    return 1;
 }
