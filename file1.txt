@@ -1,0 +1,15 @@
+// Mesh Quality Analyzer - Jacobian metric
+#include <vector>
+#include <iostream>
+
+double computeJacobian(const std::vector<double>& nodes) {
+    // Version A: Tamilselvan's original
+    double J = (nodes[2] - nodes[0]) * (nodes[7] - nodes[1]);  // 2D Jacobian
+    return J;
+}
+
+int main() {
+    std::vector<double> quad = {0,0, 1,0, 1,1, 0,1};
+    std::cout << "Jacobian: " << computeJacobian(quad) << std::endl;
+    return 0;
+}
